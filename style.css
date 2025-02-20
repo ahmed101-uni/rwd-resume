@@ -37,6 +37,7 @@ nav {
     list-style: none;
     display: flex;
     padding: 0;
+    
 }
 
 .nav-links li {
@@ -136,12 +137,17 @@ i {
         display: none;
         /* flex-direction: column; */
         text-align: center;
-        
+        font-size: 12px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .nav-links li {
+        width: fit-content;
+        flex: 1;
     }
     .nav-links.active {
         display: flex;
         grid-column: 1 / -1;
-
     }
     .menu-toggle {
         display: block;
